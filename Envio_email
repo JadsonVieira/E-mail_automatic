@@ -1,0 +1,34 @@
+Este projeto realiza o envio automático de e-mails personalizados com anexos, baseado em uma planilha de controle (ENVIO.xlsx).
+
+Cada destinatário recebe um e-mail específico, com:
+
+Assunto dinâmico (incluindo o nome do responsável).
+
+Corpo em HTML formatado.
+
+Anexo correspondente conforme definido no Excel.
+
+O sistema:
+
+Valida os endereços de e-mail antes do envio.
+
+Gerencia tentativas de reenvio em caso de erro, aguardando 2 minutos entre as tentativas.
+
+Evita falhas no envio causadas por e-mails inválidos com caracteres especiais.
+
+Funcionalidades
+✅ Leitura da planilha de destinatários.
+✅ Validação de e-mails para evitar domínios inválidos.
+✅ Envio de e-mail com HTML rico.
+✅ Anexos automáticos conforme definido no controle.
+✅ Retry automático em caso de erro (com espera de 2 minutos).
+✅ Logs no console para monitorar o progresso.
+
+Tecnologias Utilizadas
+Python 3.10+
+
+Pandas — Manipulação de dados.
+
+smtplib / ssl / email — Envio seguro de e-mails.
+
+Regex — Validação de e-mails.
